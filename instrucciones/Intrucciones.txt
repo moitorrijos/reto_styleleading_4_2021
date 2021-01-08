@@ -1,0 +1,18 @@
+Guía de Estilos
+
+Detalles de los colores están creados en las variables CSS, mira el archivo "style.css".
+
+/*Global*/
+/* Propiedades Personalizadas */
+:root{
+    --main-background-color: #1A4341;
+    --main-circle-color: #F3AC3C;
+    --main-line-color: #F3AC3C;
+    --secondary-circle-color: #998235;
+}
+La imagen "resultado_final.png" es la referencia visual de cómo debe quedar al final el proyecto.
+
+Si tienes dudas adiconales me puedes contactar a: jair@cooltimedia.com
+
+Gracias por participar.
+Te deseamos los mejor.

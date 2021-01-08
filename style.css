@@ -1,0 +1,120 @@
+/*Global*/
+/* Propiedades Personalizadas */
+:root{
+    --main-background-color: #1A4341;
+    --main-circle-color: #F3AC3C;
+    --main-line-color: #F3AC3C;
+    --secondary-circle-color: #998235;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--main-background-color);
+    display: flex;
+    place-items: center;
+    justify-content: center;
+}
+
+.virus {
+  position: relative;
+  animation: flotar 1.5s linear infinite forwards;
+  border-radius: 100%;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15), 0 5px 30px rgba(0, 0, 0, 0.25);
+}
+
+.cuerpo-virus {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  background-color: var(--main-circle-color);
+  position: relative;
+  z-index: 3;
+}
+
+.circulo {
+  background-color: var(--main-background-color);
+  position: absolute;
+  opacity: 0.75;
+  border-radius: 100%;
+}
+
+.circulo-1 {
+  width: 20px;
+  height: 20px;
+  right: 25px;
+  top: 50px;
+}
+
+.circulo-2 {
+  width: 60px;
+  height: 60px;
+  left: 40px;
+  top: 50px;
+}
+
+.circulo-3 {
+  width: 33px;
+  height: 33px;
+  left: 70px;
+  top: 130px;
+}
+
+.brazo {
+  position: absolute;
+  border-radius: 20px;
+  width: 140px;
+  height: 14px;
+  background-color: var(--main-circle-color);
+  z-index: 1;
+}
+
+.brazo-1 {
+  transform: rotate(90deg);
+  left: 25px;
+  top: -30px;
+}
+
+.brazo-2 {
+  transform: rotate(-30deg);
+  left: 140px;
+  top: 30px;
+}
+
+.brazo-3 {
+  transform: rotate(30deg);
+  left: -50px;
+  top: 40px;
+}
+
+.brazo-4 {
+  transform: rotate(-30deg);
+  left: -50px;
+  top: 155px;
+}
+
+.brazo-5 {
+  transform: rotate(90deg);
+  left: 35px;
+  bottom: -12px;
+}
+
+.brazo-6 {
+  transform: rotate(30deg);
+  right: -80px;
+  bottom: 30px;
+}
+
+@keyframes flotar {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-10px)
+  }
+  80% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
